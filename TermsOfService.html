@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Woodstone Homestay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d4a574 0%, #c9a227 50%, #b8860b 100%);
+            color: #1a1a2e;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 0 0 20px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .logo {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        nav button {
+            padding: 12px 25px;
+            border: none;
+            background: linear-gradient(135deg, #d4a574 0%, #c9a227 100%);
+            color: #1a1a2e;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        nav button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.5);
+        }
+
+        nav button.active {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #d4a574;
+        }
+
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section h2 {
+            color: #1a1a2e;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #d4a574;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section h2 .icon {
+            font-size: 2em;
+        }
+
+        .section h3 {
+            color: #c9a227;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3:first-child {
+            margin-top: 0;
+        }
+
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 20px;
+            border-left: 4px solid #d4a574;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+            color: #1a1a2e;
+            font-weight: 500;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #6c757d;
+        }
+
+        .info-box p {
+            margin: 0;
+        }
+
+        .time-box {
+            background: linear-gradient(135deg, #d4a574 0%, #c9a227 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .time-box p {
+            margin: 0;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #d4a574;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .warning p {
+            margin: 0;
+            color: #856404;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .last-updated {
+            color: #d4a574;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .logo {
+                font-size: 3em;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            nav button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🏠</div>
+            <h1>Woodstone Homestay</h1>
+            <p>Terms of Service & Kebijakan Penginapan</p>
+        </header>
+
+        <nav>
+            <button class="active" onclick="scrollToSection('checkin')">Check-in & Check-out</button>
+            <button onclick="scrollToSection('tamu')">Kebijakan Tamu</button>
+            <button onclick="scrollToSection('pembayaran')">Pembatalan & Pembayaran</button>
+            <button onclick="scrollToSection('fasilitas')">Aturan & Fasilitas</button>
+        </nav>
+
+        <section id="checkin" class="section">
+            <h2><span class="icon">🔑</span> Aturan Check-in & Check-out</h2>
+            
+            <h3><span class="icon">🕐</span> Waktu Check-in</h3>
+            <div class="time-box">
+                <p>⏰ Mulai pukul 14:00 hingga 22:00</p>
+            </div>
+            <p>Tamu dapat melakukan check-in mulai pukul 14:00 hingga 22:00. Untuk kedatangan di luar jam tersebut, mohon hubungi pihak pengelola sebelumnya untuk pengaturan khusus.</p>
+
+            <h3><span class="icon">🕑</span> Waktu Check-out</h3>
+            <div class="time-box">
+                <p>🕗 Mulai pukul 07:00 hingga 12:00</p>
+            </div>
+            <p>Tamu diharapkan menyelesaikan proses check-out sebelum pukul 12:00. Untuk check-out di luar jam tersebut, mohon koordinasi dengan pihak pengelola.</p>
+
+            <h3><span class="icon">🆔</span> Persyaratan Identitas</h3>
+            <div class="highlight">
+                <p>📋 Tamu wajib menunjukkan kartu identitas berfoto (KTP/Passport) yang sah dan kartu kredit saat proses check-in.</p>
+            </div>
+            <p>Dokumen identitas harus masih berlaku dan sesuai dengan nama pada reservasi. Kartu kredit diperlukan untuk jaminan tambahan jika diperlukan.</p>
+
+            <h3><span class="icon">📱</span> Pemberitahuan Kedatangan</h3>
+            <div class="info-box">
+                <p>📞 Tamu diharapkan menginformasikan perkiraan waktu kedatangan terlebih dahulu kepada pihak pengelola untuk memastikan ketersediaan staf yang siap melayani.</p>
+            </div>
+        </section>
+
+        <section id="tamu" class="section">
+            <h2><span class="icon">👥</span> Kebijakan Tamu & Anak-anak</h2>
+            
+            <h3><span class="icon">👤</span> Batasan Usia</h3>
+            <div class="warning">
+                <p>⚠️ <strong>Adults-Only:</strong> Akomodasi ini ditujukan khusus untuk dewasa. Anak-anak tidak diperbolehkan menginap di properti ini.</p>
+            </div>
+            <p>Woodstone Homestay adalah properti khusus dewasa yang dirancang untuk memberikan pengalaman menginap yang tenang dan eksklusif bagi para tamu dewasa.</p>
+
+            <h3><span class="icon">🛏️</span> Tempat Tidur Tambahan</h3>
+            <div class="info-box">
+                <p>❌ Tidak tersedia fasilitas ranjang bayi (cot) maupun tempat tidur tambahan (extra bed).</p>
+            </div>
+            <p>Semua kamar telah dilengkapi dengan tempat tidur yang sesuai untuk jumlah tamu yang tercantum pada reservasi.</p>
+
+            <h3><span class="icon">👨‍👩‍👧</span> Pendampingan</h3>
+            <div class="highlight">
+                <p>👪 Tamu di bawah usia 18 tahun hanya bisa check-in jika didampingi orang tua atau wali resmi dengan dokumen yang sah.</p>
+            </div>
+            <p>Dokumen pendampingan harus menunjukkan hubungan resmi antara pendamping dan tamu di bawah umur.</p>
+        </section>
+
+        <section id="pembayaran" class="section">
+            <h2><span class="icon">💳</span> Pembatalan & Pembayaran</h2>
+            
+            <h3><span class="icon">🔄</span> Kebijakan Pembatalan</h3>
+            <div class="highlight">
+                <p>📝 Kebijakan pembatalan dan pembayaran di muka (prepayment) bervariasi tergantung pada tipe kamar atau opsi harga yang dipilih saat pemesanan.</p>
+            </div>
+            <p>Mohon periksa dengan cermat kebijakan pembatalan yang berlaku untuk reservasi Anda saat melakukan pemesanan. Beberapa tipe kamar mungkin memiliki kebijakan pembatalan yang lebih ketat.</p>
+
+            <h3><span class="icon">💰</span> Pembayaran di Muka</h3>
+            <ul>
+                <li>Prepayment mungkin diperlukan untuk beberapa tipe kamar</li>
+                <li>Persyaratan pembayaran bervariasi berdasarkan paket yang dipilih</li>
+                <li>Pastikan metode pembayaran Anda sesuai dengan persyaratan reservasi</li>
+            </ul>
+
+            <div class="info-box">
+                <p>ℹ️ Untuk informasi lebih detail mengenai kebijakan pembayaran, silakan hubungi pihak pengelola atau periksa detail reservasi Anda.</p>
+            </div>
+        </section>
+
+        <section id="fasilitas" class="section">
+            <h2><span class="icon">✨</span> Aturan Tambahan & Fasilitas</h2>
+            
+            <h3><span class="icon">📝</span> Permintaan Khusus</h3>
+            <div class="info-box">
+                <p>🎯 Semua permintaan khusus bersifat tergantung ketersediaan dan mungkin dikenakan biaya tambahan.</p>
+            </div>
+            <p>Woodstone Homestay akan berusaha memenuhi permintaan khusus Anda, namun tidak dapat menjamin ketersediaan. Mohon konfirmasi terlebih dahulu dengan pihak pengelola.</p>
+
+            <h3><span class="icon">🏡</span> Fasilitas Umum</h3>
+            <ul>
+                <li>🍳 Dapur bersama untuk kebutuhan memasak tamu</li>
+                <li>📶 WiFi gratis di seluruh area properti</li>
+                <li>🌳 Taman yang asri untuk bersantai</li>
+                <li>🛋️ Lounge bersama untuk bersosialisasi</li>
+            </ul>
+
+            <h3><span class="icon">🚴</span> Layanan Tambahan</h3>
+            <div class="highlight">
+                <p>🚲 Pihak homestay menyediakan penyewaan sepeda motor dan sepeda berdasarkan ulasan tamu di Tripadvisor.</p>
+            </div>
+            <p>Layanan penyewaan kendaraan ini memudahkan tamu untuk menjelajahi area sekitar. Silakan hubungi resepsionis untuk informasi lebih lanjut mengenai ketersediaan dan tarif penyewaan.</p>
+
+            <h3><span class="icon">📋</span> Aturan Umum</h3>
+            <ul>
+                <li>Hormati ketenangan tamu lain dengan menjaga suara yang wajar</li>
+                <li>Jaga kebersihan fasilitas bersama</li>
+                <li>Patuhi peraturan yang berlaku di properti</li>
+                <li>Dilarang merokok di area dalam ruangan</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 Woodstone Homestay. All rights reserved.</p>
+            <p class="last-updated">Terakhir diperbarui: 2024</p>
+            <p>Untuk pertanyaan lebih lanjut, silakan hubungi pihak pengelola.</p>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const navButtons = document.querySelectorAll('nav button');
+            
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Add scroll spy functionality
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navButtons = document.querySelectorAll('nav button');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('onclick').includes(current)) {
+                    btn.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
